@@ -1,0 +1,29 @@
+.grid { 
+    width: 600px; 
+    height: 300px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: 70px 420px; 
+    } 
+    
+    .grid img { 
+    margin: 2px; 
+    transform-style: preserve-3d; 
+    transition:  0.5s; 
+    } 
+    
+    .grid img.flip { 
+    transform: rotateY(180deg); 
+    } 
+    #title{
+        text-align: center;
+    }
+
+    .score{
+        text-align: center;
+        font-size: 40px;
+    }
+    .congrates{
+        text-align: center;
+        font-size: 30px;
+    }
