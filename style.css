@@ -1,9 +1,9 @@
 .grid { 
-    width: 600px; 
-    height: 300px; 
+    width: 900px; 
+    height: 100px; 
     display: flex; 
     flex-wrap: wrap; 
-    margin: 70px 420px; 
+    margin: 50px 250px; 
     } 
     
     .grid img { 
@@ -17,13 +17,16 @@
     } 
     #title{
         text-align: center;
+        font-size: 40px;
+        color:rgb(30, 192, 157); ;
     }
 
     .score{
         text-align: center;
         font-size: 40px;
     }
-    .congrates{
+    .congrats{
         text-align: center;
         font-size: 30px;
     }
+    

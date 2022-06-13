@@ -7,10 +7,14 @@
             {name:"zebra", Img:"zebra.png"},
             {name:"elephante", Img:"elephante.png"},
             {name:"elephante", Img:"elephante.png"},
+            {name:"dog", Img:"dog.png"},
+            {name:"dog", Img:"dog.png"},
+            {name:"cat", Img:"cat.png"},
+            {name:"cat", Img:"cat.png"},
        
         ]
 
-        //cardArray.classList.add("images");
+       
        
             cardArray.sort(() => 0.5 - Math.random())
 
@@ -40,14 +44,14 @@
             const optionOne = cardsChosenId[0];
             const optionTwo = cardsChosenId[1];
             if (cardsChosen[0] === cardsChosen[1] && optionOne !== optionTwo) {
-                alert("you found a match");
-                card[optionOne].setAttribute('src', 'white.png')
-                card[optionTwo].setAttribute('src', 'white.png')
+                
+                card[optionOne].removeEventListener("click", flipCard);
+                card[optionTwo].removeEventListener("click", flipCard);
                 cardWon.push(cardsChosen)
             } else{
                 card[optionOne].setAttribute('src', 'green.png')
                 card[optionTwo].setAttribute('src', 'green.png')
-                alert('Sorry, try again')
+                
             }
             cardsChosen = [];
             cardsChosenId = [];
